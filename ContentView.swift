@@ -29,20 +29,20 @@ struct ContentView: View {
         ZStack {
             AngularGradient(gradient: Gradient(colors: [.green, .gray, .black, .green, .gray, .black, .green]), center: .center)
                 .ignoresSafeArea()
-            VStack {
+               VStack {
                 Spacer()
                 Text("NFL HOF Eagles")
                     .font(.custom("Philosopher-Bold", size: 38).bold())
-                    .foregroundColor(.white)
+                    .foregroundStyle(.white)
                 VStack(spacing: 15) {
                     VStack {
                         Text("Tap the NFL Hall of Fame Eagle that is")
                             .font(.custom("Philosopher-Bold", size: 20))
-                            .foregroundColor(.black.opacity(0.5))
+                            .foregroundStyle(.black.opacity(0.5))
                             
                         Text(players[correctAnswer])
                             .font(.custom("Philosopher-Bold", size: 36))
-                            .foregroundColor(.black.opacity(0.5))
+                            .foregroundStyle(.black.opacity(0.5))
                         
                     }
                     
@@ -73,14 +73,14 @@ struct ContentView: View {
                 
                 Text("Score: \(score)")
                     .font(.custom("Philosopher-Bold", size: 34).bold())
-                    .foregroundColor(.white)
+                    .foregroundStyle(.white)
                 Spacer()
                 Text("All images are the property of the NFL Hall of Fame")
                     .font(.custom("Philosopher-Bold", size: 11))
-                    .foregroundColor(.white)
+                    .foregroundStyle(.white)
                 Text("Not for commercial use")
                     .font(.custom("Philosopher-Bold", size: 11))
-                    .foregroundColor(.white)
+                    .foregroundStyle(.white)
             }
             .padding()
         }
